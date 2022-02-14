@@ -47,8 +47,8 @@ function RarityNavbar() {
                     !windowHeight && 'lg:rounded-full max-w-[1200px] w-full'
                 } mx-auto shadow-2xl`}
             >
-                <div className="my-container flex flex-wrap justify-between items-center">
-                <button type="button" onClick={() => navigate('/')} className="flex">
+                <div className="my-container flex justify-between items-center">
+                    <button type="button" onClick={() => navigate('/')} className="flex">
                         <img className="h-9 md:h-12 xl:h-16" src={Logo} alt="SolLires" />
                     </button>
                     <div className="flex md:order-2">
@@ -97,28 +97,43 @@ function RarityNavbar() {
                         </button>
                     </div>
                     <div className="hidden w-full lg:block md:w-auto" id="NavBarId">
-                        <ul className="flex flex-col mt-4 lg:flex-row lg:space-x-8 md:mt-0 text-base md:text-xl  md:font-medium text-main-white">
-                            <li onClick={() => scrollTo('#about')} className="hover:text-orange">
-                                <a href="#about" className="block py-2 pl-3 " aria-current="page">
-                                    About
-                                </a>
-                            </li>
-                            <li onClick={() => scrollTo('#works')} className="hover:text-orange">
-                                <a href="#works" className="block py-2 pl-3 ">
-                                    How it works
+                        <ul className="flex flex-col mt-4 lg:flex-row lg:space-x-6 md:mt-0 text-base md:text-xl  md:font-medium text-main-white">
+                            <li onClick={() => scrollTo('#spoilers')} className="hover:text-orange">
+                                <a
+                                    href="#spoilers"
+                                    className="block py-2 pl-3 "
+                                    aria-current="page"
+                                >
+                                    spoilers
                                 </a>
                             </li>
                             <li
-                                onClick={() => scrollTo('#cars')}
+                                onClick={() => scrollTo('#bodyColors')}
                                 className="hover:text-orange"
                             >
-                                <a href="#cars" className="block py-2 pl-3 ">
-                                    Cars
+                                <a href="#bodyColors" className="block py-2 pl-3 ">
+                                    Body Colors
                                 </a>
                             </li>
-                            <li onClick={() => scrollTo('#road-map')} className="hover:text-orange">
-                                <a href="#road-map" className="block py-2 pl-3 ">
-                                    Road Map
+                            <li
+                                onClick={() => scrollTo('#spoilersBody')}
+                                className="hover:text-orange"
+                            >
+                                <a href="#spoilersBody" className="block py-2 pl-3 ">
+                                    Spoilers Body
+                                </a>
+                            </li>
+                            <li onClick={() => scrollTo('#wheel')} className="hover:text-orange">
+                                <a href="#wheel" className="block py-2 pl-3 ">
+                                    Wheel
+                                </a>
+                            </li>
+                            <li
+                                onClick={() => scrollTo('#headlights')}
+                                className="hover:text-orange"
+                            >
+                                <a href="#headlights" className="block py-2 pl-3 ">
+                                    Headlights
                                 </a>
                             </li>
                         </ul>
@@ -133,42 +148,52 @@ function RarityNavbar() {
                     >
                         <li
                             onClick={() => {
-                                scrollTo('#about');
+                                scrollTo('#spoilers');
                                 setIsOpen(false);
                             }}
                         >
-                            <a to="#about" className="block py-2 pl-3 " aria-current="page">
-                                About
+                            <a href="#spoilers" className="block py-2 pl-3 " aria-current="page">
+                                spoilers
                             </a>
                         </li>
                         <li
                             onClick={() => {
-                                scrollTo('#works');
+                                scrollTo('#bodyColors');
                                 setIsOpen(false);
                             }}
                         >
-                            <a href="#works" className="block py-2 pl-3 ">
-                                How it works
+                            <a href="#bodyColors" className="block py-2 pl-3 ">
+                                Body Colors
                             </a>
                         </li>
                         <li
                             onClick={() => {
-                                scrollTo('#cars');
+                                scrollTo('#spoilersBody');
                                 setIsOpen(false);
                             }}
                         >
-                            <a href="#cars" className="block py-2 pl-3 ">
-                                Cars
+                            <a href="#spoilersBody" className="block py-2 pl-3 ">
+                                Spoilers Body
                             </a>
                         </li>
                         <li
                             onClick={() => {
-                                scrollTo('#road-map');
+                                scrollTo('#wheel');
                                 setIsOpen(false);
                             }}
                         >
-                            <a href="#road-map" className="block py-2 pl-3 ">
-                                Road Map
+                            <a href="#wheel" className="block py-2 pl-3 ">
+                                Wheel
+                            </a>
+                        </li>
+                        <li
+                            onClick={() => {
+                                scrollTo('#headlights');
+                                setIsOpen(false);
+                            }}
+                        >
+                            <a href="#headlights" className="block py-2 pl-3 ">
+                                Headlights
                             </a>
                         </li>
                     </ul>

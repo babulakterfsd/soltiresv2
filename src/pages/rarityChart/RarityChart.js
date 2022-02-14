@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ReactGA from 'react-ga';
 import MainTitle from '../../components/Shared/MainTitle';
+import Topbar from '../../components/Shared/Topbar';
 import BodyColors from '../BodyColors';
 import Headlights from '../Headlights';
 import Class from '../slider/main.module.css';
@@ -28,6 +29,7 @@ const RarityChart = () => {
     return (
         <>
             <div className={`${Class.bgImage}`}>
+                <Topbar/>
                 <RarityNavbar />
                 <div>
                     <MainTitle title="RARITY CHART" sx={{ paddingTop: '150px' }} />

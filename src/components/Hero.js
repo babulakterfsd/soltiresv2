@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Cars from '../assets/images/hero-cars.svg';
+import Topbar from './Shared/Topbar';
 import Classes from './styles/Hero.module.css';
 
 function Hero() {
@@ -10,18 +11,7 @@ function Hero() {
             id="home"
             className={`${Classes.Hero} h-[420px] sm:h-[480px] md:h-screen mt-16 lg:mt-0 lg:mb-28`}
         >
-            <div className="hidden lg:block text-center w-full bg-[#43a748] text-main-white py-.5 text-xl">
-                Mega $25,000 giveway ongoing!{' '}
-                <a
-                    href="https://twitter.com/SolTires_"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="underline hover:text-orange"
-                >
-                    Click
-                </a>{' '}
-                to join
-            </div>
+            <Topbar/>
             <div className="my-container px-5 flex flex-col items-center h-full text-main-white">
                 <div
                     className="mt-24 sm:mt-40 md:mt-44 lg:mt-48 text-center"
