@@ -1,0 +1,36 @@
+.About {
+  overflow: hidden;
+}
+
+.Content {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  padding: 20px 50px;
+  z-index: 1;
+  position: relative;
+  transform-origin: left;
+}
+
+@media only screen and (min-width: 768px) {
+  .Content::before {
+    content: '';
+    background-image: url('../../assets/images/about-bg.png');
+    position: absolute;
+    display: inline-block;
+    background-size: 200px 200px;
+    height: 200px;
+    width: 200px;
+    top: -50px;
+    right: -100px;
+  }
+}
+
+.Title::after {
+  display: block;
+  content: '';
+  width: 90px;
+  height: 2px;
+  background: #f77a1c;
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+}

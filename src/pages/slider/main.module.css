@@ -1,0 +1,55 @@
+.bgImage2 {
+  background-image: url('../../assets/images/sliderCarImages/White_frame.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 1284px;
+  border-radius: 25px;
+}
+.bgImage {
+  background-image: url('../../assets/images/sliderCarImages/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+.bgImage::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.13),
+    rgba(0, 0, 0, 0.459),
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.918)
+  );
+  /* opacity: 0.6; */
+  z-index: -1;
+}
+.active {
+  background: url('../../assets/images/sliderCarImages/Rectangle 455.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  /* height: 200px; */
+}
+
+.bg2Image {
+  background-image: linear-gradient(#17101f, #17101fb9),
+    url('../../assets/images/sliderCarImages/spolierBG.png');
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.zIndex {
+  z-index: 99999;
+}

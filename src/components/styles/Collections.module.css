@@ -1,0 +1,32 @@
+.Collection {
+  background: linear-gradient(rgba(23, 16, 31, 0.95), rgba(23, 16, 31, 1)),
+    url('../../assets/images/collectionBG.png');
+  background-size: cover;
+}
+.Bottom {
+  background: url('../../assets/images/collectionBGBottom.png') bottom
+    center/contain no-repeat;
+  margin-top: -10px;
+  min-height: 50vh;
+}
+
+.Card {
+  background: rgba(10, 7, 13, 0.95);
+  backdrop-filter: blur(26.2756px);
+  border-radius: 34.0056px;
+}
+.Card:hover {
+  background: rgba(10, 7, 13, 0.5);
+  backdrop-filter: blur(25px);
+}
+
+.CollectionBtn {
+  background: #fe5c4f !important;
+  backdrop-filter: blur(26.2756px);
+  border-radius: 90px;
+  transition: all 0.25s ease-in-out;
+}
+
+.CollectionBtn:hover {
+  background: rgba(254, 92, 79, 0.75) !important;
+}

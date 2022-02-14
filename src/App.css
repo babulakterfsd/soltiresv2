@@ -1,0 +1,74 @@
+.primary-btn {
+  background: linear-gradient(
+      306.64deg,
+      rgba(255, 41, 105, 0.65) 27.07%,
+      rgba(247, 122, 28, 0.65) 71.29%
+    ),
+    #ff9a3d !important;
+  box-shadow: 0px 22.4066px 30.3008px rgba(27, 27, 27, 0.25),
+    inset 0px 0px 8.7406px rgba(255, 255, 255, 0.52);
+  border-radius: 50px;
+  color: #fff;
+  @apply px-3 py-2 sm:px-6 sm:py-3 font-semibold text-sm sm:text-xl transition-all;
+}
+
+.primary-btn:hover {
+  background: linear-gradient(
+      306.64deg,
+      rgba(247, 122, 28, 0.65) 27.07% rgba(255, 41, 105, 0.65) 71.29%
+    ),
+    #ff9a3d !important;
+}
+
+.secondary-btn {
+  background: linear-gradient(358.21deg, #0a0411 -29.72%, #3e250e 117.71%),
+    #17101f !important;
+  box-shadow: 0px 38.4526px 52px rgba(27, 27, 27, 0.25),
+    inset 0px 0px 15px rgba(255, 255, 255, 0.52);
+  border-radius: 90px;
+  @apply px-3 py-2 sm:px-6 sm:py-3 font-semibold text-sm sm:text-xl transition-all;
+}
+
+.secondary-btn:hover {
+  background: linear-gradient(358.21deg, #3e250e -29.72%, #0a0411 117.71%),
+    #17101f !important;
+}
+
+@font-face {
+  font-family: 'font-awesome';
+
+  src: url('./assets/slick/fonts/fa-solid-900.ttf') format('truetype'),
+    url('./assets/slick/fonts/fa-solid-900.woff2') format('woff2');
+}
+
+.scrollToTop {
+  position: relative;
+}
+.scrollToTop::after {
+  font-family: 'font-awesome';
+  position: fixed;
+  bottom: 10px;
+  right: 30px;
+  color: #ff9a3d;
+  display: block;
+  content: '\f062';
+  font-size: 30px;
+  z-index: 999;
+  cursor: pointer;
+  animation: toTop 2s linear 2s infinite backwards;
+}
+
+@keyframes toTop {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  75% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}

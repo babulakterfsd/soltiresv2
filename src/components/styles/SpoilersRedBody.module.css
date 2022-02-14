@@ -1,0 +1,28 @@
+.Background {
+  background: url('../../assets/images/whiteListing-bg.png');
+  background-size: center;
+  background-position: bottom;
+  background-repeat: no-repeat;
+
+}
+
+.Card {
+  background: rgba(10, 7, 13, 0.7);
+  backdrop-filter: blur(35px);
+  border-radius: 30px;
+  transition: 0.5s;
+}
+.Card:hover {
+  background: rgba(10, 7, 13, 0.3);
+  backdrop-filter: blur(35);
+  border-radius: 30px;
+}
+.Color {
+  color: #ff6500;
+}
+
+@media only screen and (max-width: 600px) {
+  .Background {
+    background: none;
+  }
+}

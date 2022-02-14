@@ -1,0 +1,65 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  @apply font-body;
+}
+
+body {
+  min-height: 200vh;
+  @apply bg-main-dark overflow-x-hidden;
+}
+
+/* custom classes */
+.my-container {
+  @apply w-full mx-auto;
+}
+@media (min-width: 576px) {
+  .my-container {
+    max-width: 540px !important;
+  }
+}
+@media (min-width: 768px) {
+  .my-container {
+    max-width: 720px !important;
+  }
+}
+@media (min-width: 992px) {
+  .my-container {
+    max-width: 970px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .my-container {
+    max-width: 1170px !important;
+  }
+  .userImg {
+    display: block;
+  }
+}
+@media (min-width: 1400px) {
+  .my-container {
+    max-width: 1320px !important;
+  }
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4px);
+  display: none;
+}

@@ -1,0 +1,16 @@
+.Features {
+  background: linear-gradient(rgba(23, 16, 31, 0.75), rgba(23, 16, 31, 0.95)),
+    url('../../assets/images/wav.png') top center/cover no-repeat;
+}
+
+.Card {
+  background: rgba(10, 7, 13, 0.95);
+  backdrop-filter: blur(26.2756px);
+  border-radius: 34.0056px;
+  transition: 0.5s;
+}
+.Card:hover {
+  background: rgba(10, 7, 13, 0.5);
+  backdrop-filter: blur(35);
+  border-radius: 34.0056px;
+}

@@ -1,0 +1,17 @@
+.Card {
+  border: solid 0.5px transparent;
+  border-radius: 25px;
+  background-image: linear-gradient(#17101f, #17101f),
+    linear-gradient(to bottom, #ff9a02 30%, #ff2969);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  transition: all 0.5s ease-in-out;
+}
+
+.Card:hover {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 154, 2, 0.25),
+    rgba(255, 41, 105, 0.25)
+  );
+}
