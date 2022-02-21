@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import scrollToElement from 'scroll-to-element';
-import Logo from '../../assets/images/logo.png';
+import Logo from '../../assets/images/logov3.png';
 
 function RarityNavbar() {
   const navigate = useNavigate();
@@ -30,7 +30,7 @@ function RarityNavbar() {
         windowHeight ? 'fixed top-0' : 'absolute top-0 lg:top-10'
       }  w-full z-50`}
     >
-      <div className="lg:hidden text-center w-full bg-[#43a748] text-main-white py-1 text-md">
+      {/* <div className="lg:hidden text-center w-full bg-[#43a748] text-main-white py-1 text-md">
         Mega $25,000 giveway ongoing!{' '}
         <a
           href="https://twitter.com/SolTires_"
@@ -41,7 +41,7 @@ function RarityNavbar() {
           Click
         </a>{' '}
         to join
-      </div>
+      </div> */}
       <nav
         className={`bg-main-dark px-4 ${
           windowHeight ? 'py-4 md:py-3' : 'py-2 md:py-6'
@@ -57,10 +57,10 @@ function RarityNavbar() {
             <button type="button" className="primary-btn mr-2">
               <a
                 target="_blank"
-                href="https://soltires.gitbook.io/whitepaper/P3gFECjlazFqAt1xSsVQ/"
+                href="https://whitepaper.soltires.com/"
                 rel="noreferrer"
               >
-                WhitePaper
+                Whitepaper
               </a>
             </button>
             <button

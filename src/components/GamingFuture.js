@@ -1,44 +1,64 @@
 import React, { useState } from 'react';
-import Icon from '../assets/images/gamingIcon.png';
+import GarageMechanic from '../assets/images/icon/noun-garage-1045921-FFFFFF.png';
+import Garage from '../assets/images/icon/noun-garage-1076585-FFFFFF.png';
+import Pickaxe from '../assets/images/icon/noun-pickaxe-1647587-FFFFFF.png';
+import Race from '../assets/images/icon/noun-race-3406562-FFFFFF.png';
+import Repair from '../assets/images/icon/noun-repair-3871530-FFFFFF.png';
+import Trade from '../assets/images/icon/noun-trade-686718-FFFFFF.png';
 import Classes from './styles/GamingFuture.module.css';
 
 const racerData = [
     {
         id: 1,
         title: 'Mint Collection',
-        description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        icon: Icon,
+        description: 'Jump straight into action with our Car NFT Collection',
+        icon: Pickaxe,
     },
     {
         id: 2,
         title: 'Manage Garage',
-        description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        icon: Icon,
+        description: 'Customize, repair and upgrade your vehicles',
+        icon: Garage,
     },
     {
         id: 3,
         title: 'Race & Earn',
         description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        icon: Icon,
+            'Earn $TIRE by competing in tournaments, winning races, and completing daily challenges',
+        icon: Race,
     },
     {
         id: 4,
         title: 'Trade Collection',
-        description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        icon: Icon,
+        description: 'Purhcase a new engine, set of tires or transmission on the secondary market',
+        icon: Trade,
     },
 ];
 const mechanicsData = [
     {
         id: 1,
-        title: 'Trade Mechanics',
+        title: 'Mint Collection',
+        description: 'Get your tools and begin fixing or upgrading cars and its components',
+        icon: Pickaxe,
+    },
+    {
+        id: 2,
+        title: 'Manage Your Shop',
+        description: 'Repair cars & components and upgrade your tools',
+        icon: GarageMechanic,
+    },
+    {
+        id: 3,
+        title: 'Repair & Earn',
+        description: 'Put in the effort, become a skilled mechanic, and earn $TIRE',
+        icon: Repair,
+    },
+    {
+        id: 4,
+        title: 'Trade Collection',
         description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        icon: Icon,
+            'Unused components can be salvaged for $TIRE or exchanged for random parts of the same tier',
+        icon: Trade,
     },
 ];
 
@@ -47,8 +67,8 @@ const GamingFuture = () => {
     const allData = isRacer ? racerData : mechanicsData;
     return (
         <div className="md:py-0 lg:py-20">
-            <div className="my-container md:mt-12">
-                <h2 className="font-montserrat text-2xl md:text-4xl lg:text-6xl text-center font-bold text-main-white mt-12 md:mt-0">
+            <div className="my-container mt-16 md:mt-16">
+                <h2 className="font-montserrat text-2xl md:text-4xl lg:text-6xl text-center font-bold text-main-white">
                     Become a part of the
                     <br />
                     gaming future

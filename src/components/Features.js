@@ -24,12 +24,12 @@ const features = [
     {
         id: 3,
         title: 'Trade / Lease',
-        title2: 'Garage',
+        title2: 'Cars',
         img: three,
     },
     {
         id: 4,
-        title: 'Earn Token at',
+        title: 'Earn $TIRE in',
         title2: ' Every Race',
         img: four,
     },
@@ -46,7 +46,7 @@ const Features = () => (
             <div className="my-container p-5">
                 <div className="font-montserrat">
                     <div className="mt-24 lg:mt-10">
-                        <MainTitle title="Soltires Features" />
+                        <MainTitle title="Features" />
                     </div>
 
                     <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-2 md:gap-x-4 gap-y-16 text-main-white">

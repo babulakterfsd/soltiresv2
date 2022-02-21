@@ -12,165 +12,122 @@ import RoadMapDetailsTablet from './RoadMapDetailsTablet';
 const data = [
     {
         id: 1,
-        date: 'Dec. 2021',
-        title: 'Launch Roadmap',
+        date: 'Nov. 2021',
+        title: 'Inception',
         options: [
             {
-                name: 'Launch  Website V1.',
+                name: 'Launch website V1',
                 icon: Tick,
             },
             {
-                name: 'Open Cars Minting',
+                name: 'Demo game development',
                 icon: Tick,
             },
             {
-                name: 'Launch  Website V1.',
+                name: 'Design 15 distinct car models',
                 icon: Tick,
             },
             {
-                name: 'Open Cars Minting',
-                icon: Minus,
+                name: 'Release white paper',
+                icon: Tick,
             },
             {
-                name: 'Launch  Website V1.',
-                icon: Minus,
-            },
-            {
-                name: 'Open Cars Minting',
-                icon: Minus,
+                name: 'Launch website V2',
+                icon: Tick,
             },
         ],
     },
     {
         id: 2,
-        date: 'Dec. 2021',
-        title: 'Launch Roadmap',
+        date: 'Feb. 2022',
+        title: 'Phase 1',
         options: [
             {
-                name: 'Launch  Website V1.',
-                icon: Tick,
-            },
-            {
-                name: 'Open Cars Minting',
-                icon: Tick,
-            },
-            {
-                name: 'Launch  Website V1.',
-                icon: Tick,
-            },
-            {
-                name: 'Open Cars Minting',
+                name: 'Community events',
                 icon: Minus,
             },
             {
-                name: 'Launch  Website V1.',
+                name: 'Public game beta (for WLs)',
                 icon: Minus,
             },
             {
-                name: 'Open Cars Minting',
+                name: 'Car Mint',
+                icon: Minus,
+            },
+            {
+                name: 'Surprise airdrop for holders',
+                icon: Minus,
+            },
+            {
+                name: 'Implementation feedback into game',
                 icon: Minus,
             },
         ],
     },
     {
         id: 3,
-        date: 'Dec. 2021',
-        title: 'Launch Roadmap',
+        date: 'Q2. 2022',
+        title: 'Phase 2',
         options: [
             {
-                name: 'Launch  Website V1.',
-                icon: Tick,
-            },
-            {
-                name: 'Open Cars Minting',
-                icon: Tick,
-            },
-            {
-                name: 'Launch  Website V1.',
-                icon: Tick,
-            },
-            {
-                name: 'Open Cars Minting',
+                name: 'Launch $TIRE',
                 icon: Minus,
             },
             {
-                name: 'Launch  Website V1.',
+                name: 'Airdrop $TIRE to holders and WLs',
                 icon: Minus,
             },
             {
-                name: 'Open Cars Minting',
+                name: 'Public game launch',
+                icon: Minus,
+            },
+            {
+                name: 'Design components',
+                icon: Minus,
+            },
+            {
+                name: 'SolTires Arena development',
                 icon: Minus,
             },
         ],
     },
     {
         id: 4,
-        date: 'Dec. 2021',
-        title: 'Launch Roadmap',
+        date: 'Q3. 2022',
+        title: 'Phase 3',
         options: [
             {
-                name: 'Launch  Website V1.',
-                icon: Tick,
-            },
-            {
-                name: 'Open Cars Minting',
-                icon: Tick,
-            },
-            {
-                name: 'Launch  Website V1.',
-                icon: Tick,
-            },
-            {
-                name: 'Open Cars Minting',
+                name: 'Implement new components and circuits into game',
                 icon: Minus,
             },
             {
-                name: 'Launch  Website V1.',
+                name: 'Components mint (engines, transmissions & tires)',
                 icon: Minus,
             },
             {
-                name: 'Open Cars Minting',
+                name: 'SolTires: Arena expansion ',
                 icon: Minus,
             },
         ],
     },
     {
         id: 5,
-        date: 'Dec. 2021',
-        title: 'Launch Roadmap',
+        date: 'Q4. 2022',
+        title: 'Phase 4',
         options: [
             {
-                name: 'Launch  Website V1.',
-                icon: Tick,
-            },
-            {
-                name: 'Open Cars Minting',
-                icon: Tick,
-            },
-            {
-                name: 'Launch  Website V1.',
-                icon: Tick,
-            },
-            {
-                name: 'Open Cars Minting',
-                icon: Minus,
-            },
-            {
-                name: 'Launch  Website V1.',
-                icon: Minus,
-            },
-            {
-                name: 'Open Cars Minting',
+                name: 'SolTires Arena Metaverse beta',
                 icon: Minus,
             },
         ],
     },
 ];
 
+
 const RoadMapDetails = () => (
     <div id="road-map">
         <div className="mt-20 ">
-            <MainTitle title="Soltires Road Map" />
+            <MainTitle title="Roadmap" />
 
             {window.innerWidth <= 575 ? (
                 <RoadMapDetailsMobile data={data} />

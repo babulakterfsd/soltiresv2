@@ -1,10 +1,10 @@
 .Collection {
   background: linear-gradient(rgba(23, 16, 31, 0.95), rgba(23, 16, 31, 1)),
-    url('../../assets/images/collectionBG.png');
+    url('../../assets/images/collectionBG.webp');
   background-size: cover;
 }
 .Bottom {
-  background: url('../../assets/images/collectionBGBottom.png') bottom
+  background: url('../../assets/images/collectionBGBottom.webp') bottom
     center/contain no-repeat;
   margin-top: -10px;
   min-height: 50vh;

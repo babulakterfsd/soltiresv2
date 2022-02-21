@@ -13,7 +13,7 @@
 @media only screen and (min-width: 768px) {
   .Content::before {
     content: '';
-    background-image: url('../../assets/images/about-bg.png');
+    background-image: url('../../assets/images/about-bg.webp');
     position: absolute;
     display: inline-block;
     background-size: 200px 200px;

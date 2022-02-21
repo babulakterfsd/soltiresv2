@@ -259,7 +259,7 @@
 
 @media only screen and (max-width: 768px) {
   :root {
-    --swiper-navigation-size: 20px;
+    --swiper-navigation-size: 32px;
   }
 }
 

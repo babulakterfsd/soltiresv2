@@ -1,5 +1,3 @@
-/* eslint-disable react/no-array-index-key */
-/* eslint-disable prettier/prettier */
 import React from 'react';
 
 const RoadMapCard = ({ d }) => (
@@ -12,8 +10,8 @@ const RoadMapCard = ({ d }) => (
                 </div>
                 <h2 className="text-xl text-orange font-semibold">{d.title}</h2>
 
-                {d.options.map((op,i) => (
-                    <h4 key={i} className="flex items-center space-x-2 space-y-2 ">
+                {d.options.map((op) => (
+                    <h4 key={d.id} className="flex items-center space-x-2 space-y-2 ">
                         <span>
                             <img src={op.icon} alt="" />
                         </span>

@@ -1,35 +1,35 @@
 import React from 'react';
-import one from '../assets/images/rarity-chart/spoilers/bg-1.png';
-import two from '../assets/images/rarity-chart/spoilers/bg-2.png';
-import three from '../assets/images/rarity-chart/spoilers/bg-3.png';
-import four from '../assets/images/rarity-chart/spoilers/bg-4.png';
+import concrete from '../assets/images/rarity-chart/spoilers/bg-1.png';
+import garage from '../assets/images/rarity-chart/spoilers/bg-2.png';
+import luxury from '../assets/images/rarity-chart/spoilers/bg-3.png';
+import studio from '../assets/images/rarity-chart/spoilers/bg-4.png';
 import MainTitle from '../components/Shared/MainTitle';
 import Classes from '../components/styles/SpoilersBackground.module.css';
 
 const backgrounds = [
     {
         id: 1,
-        title: 'Background',
+        title: 'Luxury',
         title2: '10%',
-        img: one,
+        img: luxury,
     },
     {
         id: 2,
-        title: 'Background',
+        title: 'Concrete',
         title2: '20%',
-        img: two,
+        img: concrete,
     },
     {
         id: 3,
-        title: 'Background',
+        title: 'Studio',
         title2: '30%',
-        img: three,
+        img: studio,
     },
     {
         id: 4,
-        title: 'Background',
+        title: 'Garage',
         title2: '40%',
-        img: four,
+        img: garage,
     },
 ];
 
@@ -39,7 +39,7 @@ const SpoilersBackground = () => (
             <div className="my-container p-5">
                 <div className="font-montserrat">
                     <div className="mt-24 lg:mt-10">
-                        <MainTitle title="Spoilers:" />
+                        <MainTitle title="Backgrounds" />
                     </div>
 
                     <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-2 md:gap-x-4 gap-y-16 text-main-white">

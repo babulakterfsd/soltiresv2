@@ -2,18 +2,37 @@ import React from 'react';
 import tick from '../assets/images/tickShape.png';
 import Classes from './styles/WhiteListing.module.css';
 
-const listItem = [
+const carItems = [
     {
         id: 1,
-        title: 'Discounted Mint Price',
+        title: 'HQ Handmade 3D NFT',
     },
     {
         id: 2,
-        title: 'Access to Game Beta Version',
+        title: '100% unique',
     },
     {
         id: 3,
-        title: 'Unlock Mystery Vault',
+        title: 'Based on 18 distinct models',
+    },
+    {
+        id: 4,
+        title: '5 divisions',
+    },
+];
+
+const listItem = [
+    {
+        id: 1,
+        title: 'Reduced Mint Price',
+    },
+    {
+        id: 2,
+        title: 'Access to Game Beta',
+    },
+    {
+        id: 3,
+        title: 'Exclusive giveaways',
     },
     {
         id: 4,
@@ -31,11 +50,11 @@ const WhiteListing = () => (
                     data-aos-duration="1500"
                 >
                     <h2 className="text-3xl lg:text-5xl text-center">
-                        Whitelisting <br /> Benefits
+                        6,666 Cars <br />
                     </h2>
                     <div className="flex flex-col items-center justify-center">
                         <ul className="list-none space-y-1.5 md:space-y-2.5 mt-6 md:mt-10">
-                            {listItem.map((item) => (
+                            {carItems.map((item) => (
                                 <li key={item.id} className="flex space-x-2 items-center">
                                     <img className="w-4 md:w-6 h-4 md:h-6" src={tick} alt="" />
                                     <h5 className="text-base sm:text-lg lg:text-2xl">
@@ -51,7 +70,7 @@ const WhiteListing = () => (
                     >
                         <a
                             target="_blank"
-                            href="https://soltires.gitbook.io/whitepaper/P3gFECjlazFqAt1xSsVQ/"
+                            href="https://whitepaper.soltires.com/gameplay/cars"
                             rel="noreferrer"
                             title="Discord"
                         >
@@ -85,11 +104,11 @@ const WhiteListing = () => (
                     >
                         <a
                             target="_blank"
-                            href="https://www.discord.gg/soltires"
+                            href="https://discord.gg/yqVWf5KDCG"
                             rel="noreferrer"
                             title="Discord"
                         >
-                            Whitelist Edition
+                            Get Whitelisted
                         </a>
                     </button>
                 </div>

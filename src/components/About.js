@@ -24,20 +24,20 @@ const About = () => (
                     data-aos-duration="1500"
                 >
                     <h4 className="text-orange text-xl md:text-2xl mb-1 sm:mb-2 md:mb-3 capitalize">
-                        About Us
+                        {/* About Us */}
                     </h4>
                     <h2
-                        className={`capitalize text-2xl md:text-4xl mb-9 sm:mb-10 md:mb-12 relative ${Classes.Title}`}
+                        className={`capitalize text-orange text-2xl md:text-4xl mb-9 sm:mb-10 md:mb-12 relative ${Classes.Title}`}
                     >
-                        About Soltires
+                        About SolTires
                     </h2>
                     <p className="text-justify text-base md:text-lg">
-                        Join us on our journey to the SolTires Arena, a mythical place accessible to
-                        the best drivers, most knowledgeable mechanics and high stakes gamblers.
-                        Earn $TIRE, our in-game tradable token, by racing friend and foe through PvP
-                        races, tournaments, death matches and daily challenges. Proudly being built
-                        on Solana.
+                        Join us on a journey to the SolTires Arena, a legendary realm only the
+                        greatest drivers, most knowledgeable technicians, and high stakes gamblers
+                        can enter. Race friends and foes in PvP races, tournaments, death matches,
+                        and daily challenges to earn $TIRE, our tradable in-game token.
                     </p>
+                    <p>Proudly built on Solana.</p>
                 </div>
             </div>
         </div>

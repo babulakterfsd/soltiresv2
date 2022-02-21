@@ -1,7 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Cars from '../assets/images/hero-cars.svg';
-import Topbar from './Shared/Topbar';
 import Classes from './styles/Hero.module.css';
 
 function Hero() {
@@ -11,7 +10,7 @@ function Hero() {
             id="home"
             className={`${Classes.Hero} h-[420px] sm:h-[480px] md:h-screen mt-16 lg:mt-0 lg:mb-28`}
         >
-            <Topbar/>
+            {/* <Topbar/> */}
             <div className="my-container px-5 flex flex-col items-center h-full text-main-white">
                 <div
                     className="mt-24 sm:mt-40 md:mt-44 lg:mt-48 text-center"
@@ -24,23 +23,32 @@ function Hero() {
                     <h2 className="font-semibold text-[25px] md:text-6xl mb-3  md:mb-7 capitalize">
                         Drag Race Evolution
                     </h2>
+                    <div className="flex flex-wrap md:flex-nowrap justify-center items-center">
                     <button type="button" className="secondary-btn capitalize">
                         <a
                             target="_blank"
-                            href="https://www.discord.gg/soltires"
+                            href="https://discord.gg/yqVWf5KDCG"
                             rel="noreferrer"
                             title="Discord"
                         >
                             Get Whitelisted
                         </a>
                     </button>
-                    <button
+                    {/* <button
                         onClick={() => navigate('/rarityChart')}
                         type="button"
                         className="secondary-btn capitalize mx-3"
                     >
                         Rarity Chart
+                    </button> */}
+                    <button
+                        onClick={() => navigate('/whitelistcheck')}
+                        type="button"
+                        className="secondary-btn capitalize mx-3 mt-2 md:mt-0"
+                    >
+                        Am I Whitelisted?
                     </button>
+                    </div>
                 </div>
                 <div
                     className="w-full mt-10"

@@ -6,124 +6,194 @@
 import React, { useEffect, useState } from 'react';
 import { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import image1 from '../../assets/images/sliderCarImages/Bitmap.png';
-import thumbImage1 from '../../assets/images/sliderCarImages/thumb(1).png';
-import thumbImage2 from '../../assets/images/sliderCarImages/thumb(2).png';
-import thumbImage4 from '../../assets/images/sliderCarImages/thumb(4).png';
-import thumbImage5 from '../../assets/images/sliderCarImages/thumb(5).png';
+import littlefury from '../../assets/images/cars/littlefury.webp';
+import themercy from '../../assets/images/cars/mercuryv2.webp';
+import oldmasterpiece from '../../assets/images/cars/oldmasterpiece.webp';
+import theclassic from '../../assets/images/cars/theclassic.webp';
+import theCookiebox from '../../assets/images/cars/thecookiebox.webp';
+import thedrifter from '../../assets/images/cars/thedrifter.webp';
+import theitalian from '../../assets/images/cars/theitalian.webp';
+import thejapenesemadness from '../../assets/images/cars/thejapenesemadness.webp';
+import thekleine from '../../assets/images/cars/thekleine.webp';
+import theMuscle from '../../assets/images/cars/themuscle.webp';
+import thesleeper from '../../assets/images/cars/thesleeper.webp';
+import theSpeed from '../../assets/images/cars/thespeed_orange.webp';
+import thesushi from '../../assets/images/cars/thesushi.webp';
+import the_technological_marvel from '../../assets/images/cars/the_technological_marvel.webp';
 // styles
 import Class from './main.module.css';
 import './swiper-bundle.css';
+
 // array of images
 const sliderImage = [
     {
-        image: image1,
-        title: 'Ford Focus RS 2017 **315 OVR**',
-        Stats: '315 OVR',
-        Acceleration: '100',
-        MaxSpeed: '125',
-        Grip: '90',
+        image: theMuscle,
+        title: 'The Muscle',
+        Stats: '1710',
+        Acceleration: '630',
+        MaxSpeed: '670',
+        Grip: '410',
         Description:
-            'If you have this in your 20’ you might look cool. Get this later on and people might think that you are going through a strange period',
-        carName: 'Ford Focus RS',
-        carIs: ' 25%',
+            "A ride in this beast will put a smile on anyone's face, no matter how sad you might be",
+        carName: 'The Muscle',
+        carIs: '8.25% (550)',
     },
     {
-        image: image1,
-        title: 'Ford Focus RS 2017 **315 OVR**',
-        Stats: '315 OVR',
-        Acceleration: '100',
-        MaxSpeed: '125',
-        Grip: '90',
+        image: theSpeed,
+        title: 'The Speedster',
+        Stats: '2660',
+        Acceleration: '1000',
+        MaxSpeed: '960',
+        Grip: '700',
         Description:
-            'If you have this in your 20’ you might look cool. Get this later on and people might think that you are going through a strange period',
-        carName: 'Ford Focus RS',
-        carIs: ' 25%',
+            "It ain't for the faint of heart with 2.4s to 100 km/h. With the proper driver it will beat most of the cars out there.",
+        carName: 'The Speedster',
+        carIs: '1.80% (120)',
     },
     {
-        image: image1,
-        title: 'Ford Focus RS 2017 **315 OVR**',
-        Stats: '315 OVR',
-        Acceleration: '100',
-        MaxSpeed: '125',
-        Grip: '90',
+        image: theCookiebox,
+        title: 'The Cookiebox',
+        Stats: '124',
+        Acceleration: '40',
+        MaxSpeed: '50',
+        Grip: '34',
         Description:
-            'If you have this in your 20’ you might look cool. Get this later on and people might think that you are going through a strange period',
-        carName: 'Ford Focus RS',
-        carIs: ' 25%',
+            "The bigger the car, the smaller the 'nose'. With this car nobody will be able to doubt your... measurements!",
+        carName: 'The Cookiebox',
+        carIs: '8.25% (550)',
     },
     {
-        image: image1,
-        title: 'Ford Focus RS 2017 **315 OVR**',
-        Stats: '315 OVR',
+        image: thesleeper,
+        title: 'The Sleeper',
+        Stats: '315',
         Acceleration: '100',
         MaxSpeed: '125',
         Grip: '90',
         Description:
-            'If you have this in your 20’ you might look cool. Get this later on and people might think that you are going through a strange period',
-        carName: 'Ford Focus RS',
-        carIs: ' 25%',
+            'Your wealthy dad bought you this to make fun of you, but you got a friend with a tuning garage so who is laughing now?',
+        carName: 'The Sleeper',
+        carIs: '9% (600)',
     },
     {
-        image: image1,
-        title: 'Ford Focus RS 2017 **315 OVR**',
-        Stats: '315 OVR',
-        carName: 'Ford Focus RS',
-        carIs: '25%',
-        Acceleration: '100',
-        MaxSpeed: '125',
-        Grip: '90',
+        image: thesushi,
+        title: 'The Sushi',
+        Stats: '1222',
+        carName: 'The Sushi',
+        carIs: '4.71% (314)',
+        Acceleration: '520',
+        MaxSpeed: '380',
+        Grip: '322',
         Description:
-            'If you have this in your 20’ you might look cool. Get this later on and people might think that you are going through a strange period',
+            'Despite the friendly name, it stings harder than Wasabi so be careful how you drift the corners... I mean take the corners.',
     },
 
     {
-        image: thumbImage1,
-        title: 'Ford Focus RS 2017 **315 OVR**',
-        Stats: '315 OVR',
-        carName: 'Ford Focus RS',
-        carIs: '25%',
-        Acceleration: '100',
-        MaxSpeed: '125',
-        Grip: '90',
+        image: theclassic,
+        title: 'The Classic',
+        Stats: '222',
+        carName: 'The Classic',
+        carIs: '6.75% (450)',
+        Acceleration: '80',
+        MaxSpeed: '90',
+        Grip: '52',
         Description:
-            'If you have this in your 20’ you might look cool. Get this later on and people might think that you are going through a strange period',
+            'The happy little car that won the hearts of motorists worldwide with its quirky personality, its unique appearance and a brilliant advertising campaign.',
     },
     {
-        image: thumbImage2,
-        title: 'Ford Focus RS 2017 **315 OVR**',
-        Stats: '315 OVR',
-        carName: 'Ford Focus RS',
-        carIs: ' 25%',
-        Acceleration: '100',
-        MaxSpeed: '125',
-        Grip: '90',
+        image: themercy,
+        title: 'The Mercy',
+        Stats: '1000',
+        carName: 'The Mercy',
+        carIs: '850 (12.75%)',
+        Acceleration: '420',
+        MaxSpeed: '240',
+        Grip: '340',
         Description:
-            'If you have this in your 20’ you might look cool. Get this later on and people might think that you are going through a strange period',
+            'Everyone who truly loves cars can likely name that special moment when his Car Guy Eye opens. Became super popular in hot rod circles. Totally understandable.',
     },
     {
-        image: thumbImage4,
-        title: 'Ford Focus RS 2017 **315 OVR**',
-        Stats: '315 OVR',
-        Acceleration: '100',
-        carName: 'Ford Focus RS',
-        carIs: ' 25%',
-        MaxSpeed: '125',
-        Grip: '90',
+        image: theitalian,
+        title: 'The Italian',
+        Stats: '850',
+        Acceleration: '360',
+        carName: 'The Italian',
+        carIs: '9.75% (650)',
+        MaxSpeed: '200',
+        Grip: '290',
         Description:
-            'If you have this in your 20’ you might look cool. Get this later on and people might think that you are going through a strange period',
+            "It’s a classic example of a car you can be vaguely happy exists on the strict proviso that you don’t have to own one.",
     },
     {
-        image: thumbImage5,
-        title: 'Ford Focus RS 2017 **315 OVR**',
-        Stats: '315 OVR',
-        Acceleration: '100',
-        carName: 'Ford Focus RS',
-        carIs: ' 25%',
-        MaxSpeed: '125',
-        Grip: '90',
+        image: thejapenesemadness,
+        title: 'The Japanese Madness',
+        Stats: '2200',
+        Acceleration: '850',
+        carName: 'The Japanese Madness',
+        carIs: '6.75% (450)',
+        MaxSpeed: '780',
+        Grip: '570',
         Description:
-            'If you have this in your 20’ you might look cool. Get this later on and people might think that you are going through a strange period',
+            'With its ambitious performance and impressive exterior design, the Japanese Madness seems to be a huge hit in our community!',
+    },
+    {
+        image: littlefury,
+        title: 'Little Fury',
+        Stats: '690',
+        Acceleration: '280',
+        carName: 'Little Fury',
+        carIs: '7.50% (500)',
+        MaxSpeed: '140',
+        Grip: '270',
+        Description:
+            'Do you want to be the fastest delivery guy in the world? Say less.',
+    },
+    {
+        image: oldmasterpiece,
+        title: 'The Old Masterpiece',
+        Stats: '1480',
+        Acceleration: '670',
+        carName: 'The Old Masterpiece',
+        carIs: '3.33% (222)',
+        MaxSpeed: '450',
+        Grip: '360',
+        Description:
+            'With this incredible diamond, the JDM industry shattered markets.',
+    },
+    {
+        image: the_technological_marvel,
+        title: 'The Technological Marvel',
+        Stats: '1600',
+        Acceleration: '710',
+        carName: 'The Technological Marvel',
+        carIs: '3% (200)',
+        MaxSpeed: '500',
+        Grip: '390',
+        Description:
+            'And then, many years later, they created this amazing car.',
+    },
+    {
+        image: thekleine,
+        title: 'The Kleine',
+        Stats: '1750',
+        Acceleration: '680',
+        carName: 'The Kleine',
+        carIs: '3.45% (230)',
+        MaxSpeed: '640',
+        Grip: '430',
+        Description:
+            'Well, if you tamper with the tiny one, the brothers could come after you.',
+    },
+    {
+        image: thedrifter,
+        title: 'The Drifter',
+        Stats: '1333',
+        Acceleration: '600',
+        carName: 'The Drifter',
+        carIs: '6% (400)',
+        MaxSpeed: '400',
+        Grip: '333',
+        Description:
+            "You won't need anything else in life if you can discover a long, empty road with lots of turns.",
     },
 ];
 
@@ -154,7 +224,7 @@ const MainSlider = () => {
             <div className="my-container md:pb-8">
                 <section className="relative">
                     <div
-                        className={`${Class.bgImage2} md:h-screen grid md:grid-cols-2 items-center gap-x-30 w-4/5 mx-auto my-8 px-8`}
+                        className={`${Class.bgImage2} ${Class.cardHeight} pt-0 pb-4 md:py-6 grid md:grid-cols-2 items-center gap-x-30 w-4/5 mx-auto my-8 px-8`}
                     >
                         <div>
                             <img
@@ -164,15 +234,8 @@ const MainSlider = () => {
                                 data-aos-duration="2000"
                                 className="w-full h-full"
                             />
-                            <button
-                                type="button"
-                                className="primary-btn px-16 ml-8 hidden md:block"
-                                onClick={(e) => e.preventDefault()}
-                            >
-                                MORE
-                            </button>
                         </div>
-                        <div className="md:text-left text-center space-y-4 md:mt-0 mt-10">
+                        <div className="md:text-left text-center md:mt-0 mt-10">
                             <div className="text-main-white lg:text-5xl md:text-4xl text-3xl font-bold">{`0${
                                 index + 1
                             }`}</div>
@@ -180,7 +243,7 @@ const MainSlider = () => {
                                 {sliderImage[index]?.title}
                             </div>
                             <div className="text-main-white lg:text-2xl md:text-xl">
-                                Stats:{' '}
+                                OVR:{' '}
                                 <span style={{ color: '#FF7507' }}>
                                     {sliderImage[index]?.Stats}
                                 </span>{' '}
@@ -208,16 +271,9 @@ const MainSlider = () => {
                                 </span>
                             </div>
                         </div>
-                        <button
-                            type="button"
-                            className="primary-btn block md:hidden w-2/4 mx-auto my-5"
-                            onClick={(e) => e.preventDefault()}
-                        >
-                            MORE
-                        </button>
                     </div>
                     {/* buttons */}
-                    <div className="absolute top-2/4 w-full flex justify-between">
+                    <div className="absolute top-[300px] w-full flex justify-between">
                         <button type="button" onClick={prev} className="ml-4 swiper-button-prev" />
                         <button type="button" onClick={next} className=" mr-4 swiper-button-next" />
                     </div>
@@ -280,12 +336,12 @@ const MainSlider = () => {
                                     onClick={() => setIndex(i)}
                                     className={index === i ? `${Class.active}` : ''}
                                 />
-                                <div className="text-main-white mt:8 py-5 font-bold border-b border-dashed">
+                                <div className="text-main-white mt:8 py-5 font-bold border-b border-dashed overflow-hidden whitespace-nowrap text-ellipsis">
                                     {item.carName}
                                 </div>
                                 <div className="text-main-white pt-5">
                                     {' '}
-                                    Car Is <span style={{ color: '#FF7507' }}>{item.carIs}</span>
+                                    Rarity: <span style={{ color: '#FF7507' }}>{item.carIs}</span>
                                 </div>
                             </div>
                         </SwiperSlide>

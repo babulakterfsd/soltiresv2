@@ -30,7 +30,7 @@ const RarityChart = () => {
         <>
             <div className={`${Class.bgImage}`}>
                 <Topbar/>
-                <RarityNavbar />
+                <RarityNavbar/>
                 <div>
                     <MainTitle title="RARITY CHART" sx={{ paddingTop: '150px' }} />
                     <h1 className="text-center md:text-4xl text-main-white mt-8 font-bold">

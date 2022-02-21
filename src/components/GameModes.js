@@ -8,17 +8,17 @@ import Classes from './styles/CarModes.module.css';
 const carModes = [
     {
         id: 1,
-        title: 'Training',
+        title: 'Practice',
         icon: Training,
     },
     {
         id: 2,
-        title: 'Multiplayer',
+        title: 'PvP / PvC',
         icon: Multiplayer,
     },
     {
         id: 3,
-        title: 'Contest',
+        title: 'Tournaments',
         icon: Contest,
     },
 ];

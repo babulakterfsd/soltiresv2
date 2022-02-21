@@ -33,7 +33,7 @@ const Community = () => (
                             <FaTwitter className=" transition duration-200 text-[#31A8FF]  absolute top-2 left-2 group-hover:text-red" />
                         </a>
                         <a
-                            href="https://www.discord.gg/soltires"
+                            href="https://discord.gg/yqVWf5KDCG"
                             target="_blank"
                             rel="noreferrer"
                             className="block p-4 h-2.5 w-2.5 rounded-full bg-[#242121] relative group"

@@ -53,3 +53,24 @@
 .zIndex {
   z-index: 99999;
 }
+
+@media only screen and (max-width: 576px) {
+    .cardHeight {
+      min-height: 1000px;
+    }
+}
+@media only screen and (max-width: 767px) {
+  .cardHeight {
+    min-height: 700px;
+  }
+}
+@media only screen and (max-width: 1192.99px) {
+  .cardHeight {
+    min-height: 600px;
+  }
+}
+@media only screen and (min-width: 1193px) {
+  .cardHeight {
+    min-height: 550px;
+  }
+}

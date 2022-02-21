@@ -1,0 +1,25 @@
+body {
+  min-height: auto !important;
+}
+
+/* .whitelistbg {
+  background: linear-gradient(rgba(59, 52, 45, 0.4), rgb(12, 12, 12)),
+    url('../../assets/images/whitelistcheckbg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+} */
+
+.mainContent {
+  backdrop-filter: 2px;
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .mainContent::before {
+    content: url('../../assets/images/wlcheck.png');
+    position: absolute;
+    top: -50px;
+    left: -60px;
+  }
+}

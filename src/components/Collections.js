@@ -2,22 +2,21 @@ import React from 'react';
 import one from '../assets/images/collections/1.png';
 import two from '../assets/images/collections/2.png';
 import three from '../assets/images/collections/3.png';
-import four from '../assets/images/collections/4.png';
 import MainTitle from './Shared/MainTitle';
 import Classes from './styles/Collections.module.css';
 
 const collectionsData = [
     {
         id: 1,
-        title: 'Engine with Blower',
-        title2: 'DIV-S/I',
+        title: 'Automatic',
+        title2: 'Gearbox',
         btn: 'Super Rare',
         img: one,
     },
     {
         id: 2,
-        title: 'Automatic',
-        title2: 'Gearbox',
+        title: 'Engine with Blower',
+        title2: 'The "Big V" Engine',
         btn: 'Rare',
         img: two,
     },
@@ -27,13 +26,6 @@ const collectionsData = [
         title2: 'Style Tire ',
         btn: 'Legendary',
         img: three,
-    },
-    {
-        id: 4,
-        title: 'Classic Racing Car',
-        title2: '120 - The Classic',
-        btn: 'Super Rare',
-        img: four,
     },
 ];
 
@@ -71,7 +63,7 @@ const collections = (
 const Collections = () => (
     <div id="collections" className={`${Classes.Collection} py-10 md:py-0`}>
         <div className="md:pt-10 lg:pt-0 lg:mb-5">
-            <MainTitle title="Soltires Collections" />
+            <MainTitle title="Future Collections" />
         </div>
         <div className="block lg:hidden mt-20 lg:mt-40">{collections}</div>
         <div className={`${Classes.Bottom} hidden lg:block lg:mt-52`}>{collections}</div>

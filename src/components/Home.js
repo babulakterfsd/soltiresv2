@@ -2,18 +2,17 @@ import React, { useEffect, useState } from 'react';
 import ReactGA from 'react-ga';
 import MainSlider from '../pages/slider/MainSlider';
 import About from './About';
-import Collections from './Collections';
 import Community from './Community';
 import Faq from './Faq';
 import Features from './Features';
 import GameModes from './GameModes';
 import GamingFuture from './GamingFuture';
 import Hero from './Hero';
+import Partners from './partners/Partners';
 import RoadMapDetails from './roadMapDetails/RoadMapDetails';
 import Footer from './Shared/Footer';
 import MainTitle from './Shared/MainTitle';
 import Nav from './Shared/Nav';
-import Team from './Team';
 import WhiteListing from './Whitelisting';
 
 const Home = () => {
@@ -39,7 +38,7 @@ const Home = () => {
             <WhiteListing />
             <GameModes />
             <Features />
-            <Collections />
+            {/* <Collections /> */}
             <div id="cars">
                 <MainTitle title="Our Cars" />
                 <MainSlider />
@@ -48,8 +47,9 @@ const Home = () => {
             <RoadMapDetails />
             <Faq />
             <Community />
-            <Team />
+            <Partners/>
             <Footer />
+            
 
             {/* scroll to top */}
             {windowHeight && (
